@@ -12,3 +12,7 @@ curl https://get.datree.io | /bin/bash
 datree version
 datree test <your_kubernetes_manifest_YAML_NAME>
 
+# if above method not works to install datree, find the below method
+helm plugin install https://github.com/datreeio/helm-datree
+helm plugin update datree
+helm datree version
